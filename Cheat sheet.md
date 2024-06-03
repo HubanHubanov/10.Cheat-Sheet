@@ -10,3 +10,5 @@
    * Add body parser (express.urlencoded())
    * Add routes module
 4. Install and config handlebars   
+   * Install express-hadlebars
+   * Config handlebars with express
