@@ -15,3 +15,7 @@
    * Add views folder with resources
    * Add home page
    * Add main layout
+   * Add partials dir
+5. Database
+   * Install mongoose (npm i mpongoose) 
+   * Setup db connection
