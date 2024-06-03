@@ -12,3 +12,4 @@
 4. Install and config handlebars   
    * Install express-hadlebars
    * Config handlebars with express
+   * Add views folder with resources
