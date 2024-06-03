@@ -5,3 +5,4 @@
 3. Install and config Express
    * Install express (npm i express)
    * Start initial Express server
+   * Add static route
