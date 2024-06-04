@@ -30,4 +30,6 @@
    * Fix register form   
    * Add post register action
    * Add authService
+   * Install bcrypt 
+   * Hash password
    
