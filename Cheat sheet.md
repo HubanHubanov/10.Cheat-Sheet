@@ -15,7 +15,9 @@
    * Install express-hadlebars
    * Config handlebars with express
    * Add views folder with resources
-   * Add home page
+   * Add home view
+   * Add home controller
+   * Add home controller to routes
    * Add main layout
    * Add partials dir
 5. Database
@@ -24,4 +26,5 @@
    * Add user model
 6. Authentication
    * Fix navigation links
+   * Add register page (view, controller, add controller to routes)
       
