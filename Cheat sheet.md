@@ -22,3 +22,6 @@
    * Install mongoose (npm i mongoose) 
    * Setup db connection
    * Add user model
+6. Authentication
+   * Fix navigation links
+      
