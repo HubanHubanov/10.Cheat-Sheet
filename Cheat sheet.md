@@ -33,6 +33,7 @@
    * Install bcrypt 
    * Hash password
    * Check confirm password
+   * Check if user exists
 7. Login
    * Add login page   
    * Fix login form
@@ -40,5 +41,5 @@
    * Add authService login method
       * validate user
       * validate password
-      
+
    
