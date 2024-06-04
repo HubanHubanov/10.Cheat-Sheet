@@ -32,4 +32,5 @@
    * Add authService
    * Install bcrypt 
    * Hash password
+   * Check confirm password
    
