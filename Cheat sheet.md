@@ -33,4 +33,6 @@
    * Install bcrypt 
    * Hash password
    * Check confirm password
+7. Login
+   * Add login page   
    
