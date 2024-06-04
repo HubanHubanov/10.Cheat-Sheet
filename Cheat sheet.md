@@ -35,4 +35,10 @@
    * Check confirm password
 7. Login
    * Add login page   
+   * Fix login form
+   * Add login post action
+   * Add authService login method
+      * validate user
+      * validate password
+      
    
