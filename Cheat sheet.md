@@ -36,12 +36,15 @@
    * Check if user exists
 7. Login
    * Install jsonwebtoken
+   * Install cookie-parser
    * Optionally: convert to promise based
    * Add login page   
    * Fix login form
    * Add login post action
    * Add authService login method
       * validate user
-      * validate password
+      * validate password  
+      * generate token 
+   * Return cookie 
 
    

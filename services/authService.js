@@ -2,6 +2,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("../lib/jsonwebtoken")
 
 const User = require("../models/User");
+const SECRET = "sdvasvarda934q2safa2032r2asfflkl"
 
 exports.register = async (userData) => {
     if(userData.password !== userData.rePassword) {
@@ -30,5 +31,14 @@ exports.login = async ({email, password}) => {
         throw new Error("Email or password is invalid")
     }
 
+    const payload = {
+        _id: user._id,
+        username: user.username,
+        email: user.email
+    }
 
+    const token = await jwt.sign(payload, SECRET, {expiresIn: "2h"});
+    
+    return token
+   
 } 
