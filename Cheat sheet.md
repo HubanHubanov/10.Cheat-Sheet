@@ -24,7 +24,10 @@
    * Install mongoose (npm i mongoose) 
    * Setup db connection
    * Add user model
-6. Authentication
+6. Register
    * Fix navigation links
    * Add register page (view, controller, add controller to routes)
    * Fix register form   
+   * Add post register action
+   * Add authService
+   
