@@ -1,4 +1,5 @@
 const bcrypt = require("bcrypt");
+const jwt = require("../lib/jsonwebtoken")
 
 const User = require("../models/User");
 
@@ -7,7 +8,7 @@ exports.register = async (userData) => {
         throw new Error("Passwords dont't match");
     } 
 
-    const user = await User.find({email: userData.email});
+    const user = await User.findOne({email: userData.email});
 
     if(user) {
         throw new Error("User already exists");

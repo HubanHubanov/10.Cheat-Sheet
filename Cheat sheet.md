@@ -35,6 +35,8 @@
    * Check confirm password
    * Check if user exists
 7. Login
+   * Install jsonwebtoken
+   * Optionally: convert to promise based
    * Add login page   
    * Fix login form
    * Add login post action
