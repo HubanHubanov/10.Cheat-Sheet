@@ -27,4 +27,4 @@
 6. Authentication
    * Fix navigation links
    * Add register page (view, controller, add controller to routes)
-      
+   * Fix register form   
