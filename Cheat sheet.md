@@ -47,5 +47,6 @@
       * generate token 
    * Return cookie 
    * Modify register for auto login
+8. Logout
 
    
