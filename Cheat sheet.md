@@ -48,5 +48,10 @@
    * Return cookie 
    * Modify register for auto login
 8. Logout
+   * Add auth middleware
+   * Check token if guest
+   * Verify token
+   * Attach user to request object and res.locals(this is for the handlebars to have the data global)
+   * Use middleware in express
 
    
