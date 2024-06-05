@@ -56,7 +56,9 @@
    * Attach user to request object and res.locals(this is for the handlebars to have the data global)
    * Use middleware in express
    * Add isAuth route guard
-10. Last fixes
+10. Error handling
+   * Add notifications   
+11. Last fixes
    * Dynamic navigation 
    
 
