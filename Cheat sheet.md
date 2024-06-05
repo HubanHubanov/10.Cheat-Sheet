@@ -59,7 +59,8 @@
 10. Error handling
    * Add notifications
    * Add getErrorMessage util
-   * Add register error handling    
+   * Add register error handling 
+   * Add login error handling   
 11. Last fixes
    * Dynamic navigation 
    
