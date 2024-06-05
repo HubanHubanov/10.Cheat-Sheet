@@ -5,6 +5,7 @@ router.get("/", (req, res) => {
     res.render("home");
 });
 
+//TODO Delete this
 router.get("/authorized-test", isAuth, (req, res) => {
     console.log(req.user);
   

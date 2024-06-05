@@ -57,7 +57,9 @@
    * Use middleware in express
    * Add isAuth route guard
 10. Error handling
-   * Add notifications   
+   * Add notifications
+   * Add getErrorMessage util
+   * Add register error handling    
 11. Last fixes
    * Dynamic navigation 
    
