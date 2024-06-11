@@ -34,11 +34,7 @@ router.post("/login", isGuest, async (req, res) => {
     try {
         const token = await authService.login(loginData);
 
-<<<<<<< HEAD
         res.cookie("auth", token);
-=======
-        res.cookie("auth", token)
->>>>>>> ed66983b44cad34e35ea2e33c8eb4dff66509669
         res.redirect("/");
 
     } catch (err) {

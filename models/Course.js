@@ -16,7 +16,7 @@ const courseSchema = new mongoose.Schema({
         required: true,
         minLength: 2
     },
-    courseImage: {
+    image: {
         type: String,
         required: true,
         match: /^https?:\/\//g
