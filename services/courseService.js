@@ -5,7 +5,22 @@ exports.getAll = () => Course.find();
 
 exports.getOne = (courseId) => Course.findById(courseId);
 
-exports.getOneDetailed = (courseId) => this.getOne(courseId).populate("owner");
+exports.getOneDetailed = (courseId) => this.getOne(courseId).populate("owner").populate("signUpList");
+
+exports.signUp = async (courseId, userId) => {
+    // await Course.findByIdAndUpdate(courseId, {$ush: {signUpList: userId}});
+    // await User.findByIdAndUpdate(userId, {$push: {signedUpCourses: courseId}});
+
+    const course = await Course.findById(courseId)
+    const user = await User.findById(userId);
+
+    course.signUpList.push(userId);
+    user.signedUpCourses.push(courseId);
+
+    await course.save();
+    await user.save();
+
+}
 
 exports.create = async (userId, courseData) => {
    
