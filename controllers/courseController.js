@@ -9,8 +9,15 @@ router.get("/", async (req, res) => {
     res.render("courses/catalog", {courses});
 });
 
+router.get("/:courseId/details", async (req, res) => {
+    const course = await courseService.getOneDetailed(req.params.courseId).lean();
+    console.log("course", course);
+
+    res.render("courses/details", {...course});
+});
+
 router.get("/create", isAuth, (req, res) => {
-    res.render("courses/create")
+    res.render("courses/create");
 });
 
 router.post("/create", isAuth, async (req, res) => {
