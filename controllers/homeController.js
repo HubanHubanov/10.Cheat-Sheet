@@ -1,9 +1,19 @@
 const router = require("express").Router();
 const {isAuth} = require("../middlewares/authMiddleware");
+const courseService = require("../services/courseService");
 
-router.get("/", (req, res) => {
-    res.render("home");
+router.get("/", async (req, res) => {
+    // const courses = await courseService.getAll().lean();
+    // const homeCourses = courses.slice(-3);
+
+    const latestCourses = await courseService.getLatest().lean();
+
+    res.render("home", {latestCourses})
 });
+
+// router.get("/", (req, res) => {
+//     res.render("home");
+// });
 
 //TODO Delete this
 // router.get("/authorized-test", isAuth, (req, res) => {
