@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        minLength: [4, "Password should be at least 4 charecters long"],
+        minLength: [3, "Password should be at least 3 charecters long"],
         required: [true, "Password is required"]
     },
     createdCourses: [{

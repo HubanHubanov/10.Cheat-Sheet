@@ -1,8 +1,6 @@
 const Course = require("../models/Course");
 const User = require("../models/User");
 
-
-
 exports.getAll = () => Course.find(); 
 
 exports.getOne = (courseId) => Course.findById(courseId);
