@@ -1,4 +1,4 @@
-# Express App Cheat Sheet
+# Express App Cheat Sheet:
 
 1. Initialize project (npm init -y)
 2. Nodemon 
