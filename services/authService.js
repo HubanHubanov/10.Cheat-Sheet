@@ -19,7 +19,7 @@ exports.register = async (userData) => {
    const createdUser = await User.create(userData);
 
    const token = await generateToken(createdUser);
-
+    
    return token;    
 };
 
