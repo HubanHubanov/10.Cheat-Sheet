@@ -1,7 +1,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require("../lib/jsonwebtoken");
 
-
 const User = require("../models/User");
 const {SECRET} = require("../config");
 
@@ -19,7 +18,7 @@ exports.register = async (userData) => {
    const createdUser = await User.create(userData);
 
    const token = await generateToken(createdUser);
-    
+
    return token;    
 };
 
@@ -41,11 +40,11 @@ exports.login = async ({email, password}) => {
     return token;
 }
 
-async function generateToken(user) {
+async function generateToken(data) {
     const payload = {
-        _id: user._id,
-        username: user.username,
-        email: user.email
+        _id: data._id,
+        username: data.username,
+        email: data.email
 }
 
 const token = await jwt.sign(payload, SECRET, {expiresIn: "2h"});

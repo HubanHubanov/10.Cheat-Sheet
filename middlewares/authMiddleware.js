@@ -4,7 +4,6 @@ const {SECRET} = require("../config");
 exports.authMiddleware  =async (req, res, next) => {
     const token = req.cookies["auth"];
     
-
     if(!token) {
        return next();
     }
