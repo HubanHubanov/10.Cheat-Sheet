@@ -21,9 +21,6 @@ app.set("view engine", "hbs");
 
 
 app.use(routes);
-app.all("*", (req, res) => {
-    res.render("404")
-});
 
 //TODO Change database name
 // mongoose.connect("mongodb://127.0.0.1:27017/course-book");
