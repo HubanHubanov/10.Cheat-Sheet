@@ -4,7 +4,6 @@ const {SECRET} = require("../config");
 exports.authMiddleware  =async (req, res, next) => {
     const token = req.cookies["auth"];
     
-
     if(!token) {
        return next();
     }
@@ -34,7 +33,11 @@ exports.isAuth = (req, res, next) => {
 
 exports.isGuest = (req, res, next) => {
     if(req.user) {
+<<<<<<< HEAD
         return res.redirect("/")
+=======
+       return res.redirect("/");
+>>>>>>> 5ee182e044cfd86142ecdd7fd6c7aa404e1574bc
     }
     next();
 }

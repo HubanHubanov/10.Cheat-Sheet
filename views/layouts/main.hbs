@@ -32,10 +32,14 @@
                 {{!-- opposite of "if" is "unless" --}}
                 {{#if isAuthenticated}}
                     <!--For loggin users-->
+<<<<<<< HEAD
                     <li><a href="profile">Profile</a></li>
+=======
+                    <li><a href="/profile">Profile</a></li>
+>>>>>>> 5ee182e044cfd86142ecdd7fd6c7aa404e1574bc
                     <li><a href="/courses/create">Create Course Offers</a></li>
                     <li><a href="/auth/logout">Logout</a></li>
-                {{else}}
+                {{else}}    
                     <!--For guest users-->
                     <li><a href="/auth/login">Login</a></li>
                     <li><a href="/auth/register">Register</a></li>
@@ -48,7 +52,7 @@
 
     <main>
          {{{body}}}
-        </main>
+        </main/>
 
     <footer>Back-End 2023</footer>
 </body>

@@ -18,5 +18,9 @@ router.all("*", (req, res) => {
     res.render("404");
 });
 
-module.exports = router;
+router.all("*", (req, res) => {
+    res.render("404");
+});
 
+
+module.exports = router;
