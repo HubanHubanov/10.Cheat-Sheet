@@ -19,12 +19,11 @@ app.engine("hbs", handlebars.engine({
 
 app.set("view engine", "hbs");
 
-
 app.use(routes);
 
 //TODO Change database name
 // mongoose.connect("mongodb://127.0.0.1:27017/course-book");
-mongoose.connect("mongodb://localhost:27017/course-book"); 
+mongoose.connect("mongodb://localhost:27017/course-book-3"); 
 
 mongoose.connection.on("connected", () => console.log("DB is connected"));
 mongoose.connection.on("disconnect", () => console.log("DB is disconnected"))
